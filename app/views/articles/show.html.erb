@@ -1,1 +1,10 @@
-show.html.erb
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+  <h1><%= @article.title %></h1>
+  <p><%= @article.content %></p>
+<p><%= link_to "Edit this article", edit_article_path %></p>
+<p><%= link_to "Delete this article", article_path, method: :delete, data: {confirm: "sure?"} %></p>
+    </div>
+  </div>
+</div>
